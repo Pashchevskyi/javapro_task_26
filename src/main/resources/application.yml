@@ -1,0 +1,22 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+name: test-YAML
+environment: testing
+enabled: false
+servers:
+  - www.javapro-task-26-test.loc
+  - www.javapro-task-26.ithillel-test.loc
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+name: prod-YAML
+environment: production
+enabled: true
+servers:
+  - www.javapro-task-26.loc
+  - www.javapro-task-26.ithillel.loc
